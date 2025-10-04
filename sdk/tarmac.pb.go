@@ -25,9 +25,12 @@ const (
 //
 // The status code will indicate failure or success.
 //
-// Status codes are as follows:
-// 000 - Success
-// 100 - Failure
+// Possible status codes are:
+// 200 - Success
+// 206 - Success with partial metadata (rows affected)
+// 400 - Malformed or invalid request
+// 404 - Requested key not found in KV store
+// 500 - Internal server error
 type Status struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
