@@ -1,8 +1,5 @@
 module github.com/tarmac-project/protobuf-go
 
-go 1.22.6
+go 1.23
 
-require (
-	github.com/planetscale/vtprotobuf v0.6.0
-	google.golang.org/protobuf v1.34.2
-)
+require github.com/aperturerobotics/protobuf-go-lite v0.11.0
